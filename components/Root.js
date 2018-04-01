@@ -3,8 +3,10 @@ var React = require('react')
 var Router = require('react-router')
 var RouteHandler = Router.RouteHandler
 
-var Root = React.createClass({
-  render: function () {
+// TODO: React.createClass is deprecated since React 15.5.0, use the npm module create-react-class instead
+// var Root = React.createClass({
+class Root extends React.Component {
+  render() {
     return (
       <html>
         <head>
@@ -16,6 +18,6 @@ var Root = React.createClass({
       </html>
     )
   }
-})
+}
 
 module.exports = Root

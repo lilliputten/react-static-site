@@ -1,7 +1,30 @@
-# Project dependencies
-.cache
-node_modules
-yarn-error.log
+# See https://help.github.com/ignore-files/ for more about ignoring files.
 
-# Build directory
+# dependencies
+/node_modules*
+
+# testing
+/coverage
+
+# production
+/build
 /public
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+.vscode
+
+# jest folders
+!__tests__
+!__snapshots__
+
+# gvim sessions
+*.session
+
+# logs
+*.log
